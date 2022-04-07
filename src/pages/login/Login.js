@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import MealSvg from "../../assets/meal.svg";
 import {MainContainer, LoginContainer, Header, FormContainer} from "./style";
 
@@ -10,11 +11,13 @@ const Login = () => {
   const loginName = "<MnrGdkl/> Recipe";
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
+  const navigate = useNavigate();
   
   const handleSubmit = (e) => {
     e.preventDefault();
     if(username === userName && password === passWord){
-      window.location.href = '/react-project-006-recipe-app/home';
+      navigate('/react-project-006-recipe-app/home');
     }else{
       alert("Username or Password is incorrect");
       setUsername("");
