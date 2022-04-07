@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import MealSvg from "../../assets/meal.svg";
 import {MainContainer, LoginContainer, Header, FormContainer} from "./style";
 
