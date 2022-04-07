@@ -33,7 +33,7 @@ const Login = () => {
           <h1>{loginName}</h1>
         </Header>
         <div>
-          <FormContainer onSubmit={handleSubmit}>
+          <FormContainer >
             <input required type="text" 
                    placeholder="username" 
                    value={username}
@@ -42,7 +42,7 @@ const Login = () => {
                    placeholder='password' 
                    value={password}
                    onChange={(e)=>setPassword(e.target.value)}/>
-            <button type="submit" >Login</button>
+            <button type="submit" onClick={handleSubmit}>Login</button>
           </FormContainer>
         </div>
       </LoginContainer>
