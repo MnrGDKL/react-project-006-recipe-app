@@ -17,7 +17,7 @@ const AppRouter = () => {
             <Route path="/react-project-006-recipe-app/home" element={<Home/>} />
             <Route path="/react-project-006-recipe-app/about" element={<About/>} />
             <Route path="/react-project-006-recipe-app/details" element={<Details/>} />
-            <Route path="*" element={<Login/>} />
+            <Route path="*" element={<h1> 404 </h1>} />
         </Routes>
         </BrowserRouter>
     </div>
