@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import MealSvg from "../../assets/meal.svg";
 import {MainContainer, LoginContainer, Header, FormContainer} from "./style";
 
@@ -33,7 +34,7 @@ const Login = () => {
           <h1>{loginName}</h1>
         </Header>
         <div>
-          <FormContainer >
+          <FormContainer>
             <input required type="text" 
                    placeholder="username" 
                    value={username}
@@ -42,7 +43,7 @@ const Login = () => {
                    placeholder='password' 
                    value={password}
                    onChange={(e)=>setPassword(e.target.value)}/>
-            <button type="submit" onClick={handleSubmit}>Login</button>
+            <button type="submit" onClick={handleSubmit}> Login</button>
           </FormContainer>
         </div>
       </LoginContainer>

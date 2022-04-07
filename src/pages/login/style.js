@@ -10,6 +10,7 @@ export const MainContainer = styled.div`
   background-size: cover;
   background-position: center;
 `;
+
 export const LoginContainer = styled.div`
 width: 550px;
 min-width: 550px;
@@ -34,6 +35,7 @@ export const Header = styled.div`
 
   h1 {
     font-size: 2.5rem;
+  }
 `;
 
 export const FormContainer = styled.form`
@@ -57,15 +59,17 @@ export const FormContainer = styled.form`
     font-size: 2rem;
     font-family: 'Girassol', sans-serif;
     background-color: rgba(0, 0, 0, 0.6);
-    color: white;
     border: none;
     cursor: pointer;
     margin: 1rem;
     border-radius: 10px;
-    
+    text-decoration: none;
+    color: white;
+
     &:hover {
       background-color: rgba(0, 0, 0, 0.8);
   }
+}
 `;
 
 
