@@ -12,12 +12,12 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const navigate = useNavigate();
+  let navigate = useNavigate();
   
   const handleSubmit = (e) => {
     e.preventDefault();
     if(username === userName && password === passWord){
-      navigate('/react-project-006-recipe-app/home');
+      navigate("/react-project-006-recipe-app/home");
     }else{
       alert("Username or Password is incorrect");
       setUsername("");
