@@ -9,8 +9,8 @@ const passWord = "1251";
 
 const Login = () => {
   const loginName = "<MnrGdkl/> Recipe";
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState("munir");
+  const [password, setPassword] = useState("1251");
 
   let navigate = useNavigate();
   
