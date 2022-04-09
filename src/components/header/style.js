@@ -50,6 +50,7 @@ export const FormButton = styled.button`
    background-color: rgb(0, 173, 181);
    transition: background-color 1s;
    cursor: pointer;
+  }
   
 `;
 

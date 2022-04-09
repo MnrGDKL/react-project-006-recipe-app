@@ -6,7 +6,8 @@ import RecipeCard from '../../pages//home/RecipeCard'
 import homeSvg from '../../assets/home.svg'
 import { 
   HomeContainer,
-  RecipeCardContainer
+  RecipeCardContainer,
+  ImgDiv, HomeImg
 } from './style';
 
 const Meals = ["Breakfast", "Lunch", "Dinner", "Snack", "Teatime"];
@@ -21,7 +22,7 @@ const Home = () => {
   const url=`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${meal}`;
 
   const Data = async () => {
-    if (query !== '') {
+    if (query) {
       const res = await axios.get(url);
       
       setRecipes(res.data.hits);
@@ -46,7 +47,9 @@ const Home = () => {
           ? (recipes.map((recipe, index) =>
           <RecipeCard key={index} Recipe={recipe.recipe}/>
           )) 
-          : (<img src={homeSvg} alt="" />)
+          : (<ImgDiv>
+              <HomeImg src={homeSvg} alt="" />
+             </ImgDiv>)
         }
       </RecipeCardContainer>
     </HomeContainer>

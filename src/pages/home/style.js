@@ -7,6 +7,7 @@ export const HomeContainer = styled.div`
 
 export const  RecipeCardContainer = styled.div`
   width: calc(100% - 5vw);
+  height: fit-content;
   margin: 20px auto;
   display: grid;
   gap: 15px;
@@ -37,6 +38,17 @@ export const EachRecipeCard = styled.div`
     border: none;
     border-radius: 3px;
     cursor: pointer;
+  }
+`;
+
+export const ImgDiv = styled.div`
+  height: 100vh;
+  width: 100vw;
+`;
+
+export const HomeImg = styled.img`
+  width: 400px;
+  margin: 0 auto;
 `;
 
 
