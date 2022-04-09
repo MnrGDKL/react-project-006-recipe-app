@@ -6,6 +6,7 @@ import Home from '../pages/home/Home';
 import Login from '../pages/login/Login';
 import Navbar from '../components/navbar/Navbar';
 import PrivateRouter from './PrivateRouter';
+import Footer from '../components/footer/Footer';
 
 const AppRouter = () => {
 
@@ -27,7 +28,8 @@ const AppRouter = () => {
           <Route path="/react-project-006-recipe-app/details" element={<Details/>} />
           <Route path="*" element={<h1> 404 </h1>} />
         </Routes>
-        </BrowserRouter>
+        <Footer/>
+      </BrowserRouter>
     </div>
   )
 }

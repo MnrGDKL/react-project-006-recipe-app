@@ -1,0 +1,20 @@
+.footer-div {
+  width: 100vw;
+  min-width: 400px;
+  background-color: rgb(2, 111, 117);
+  height: 50px;
+  font-size: 2rem;
+  color: #e7aada;
+
+  border-radius: 5px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+}
+
+.brand {
+  color: rgb(213, 213, 213);
+  font-weight: bold;
+  font-style: italic;
+  margin-right: 1.5rem;
+}
