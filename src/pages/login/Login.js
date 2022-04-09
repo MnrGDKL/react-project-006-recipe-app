@@ -18,10 +18,12 @@ const Login = () => {
     e.preventDefault();
     if(username === userName && password === passWord){
       navigate("/react-project-006-recipe-app/home");
+      sessionStorage.setItem("user", JSON.stringify({username, password}));
     }else{
       alert("Username or Password is incorrect");
       setUsername("");
       setPassword("");
+
     }
   }
   
@@ -34,15 +36,18 @@ const Login = () => {
         </Header>
         <div>
           <FormContainer>
-            <input required type="text" 
+            <input required 
+                   type="text" 
                    placeholder="username" 
                    value={username}
                    onChange={(e)=> setUsername(e.target.value)}/>
-            <input required type="password" 
+            <input required
+                   type="password" 
                    placeholder='password' 
                    value={password}
                    onChange={(e)=>setPassword(e.target.value)}/>
-            <button type="submit" onClick={handleSubmit}> Login</button>
+            <button type="submit" 
+                    onClick={handleSubmit}> Login</button>
           </FormContainer>
         </div>
       </LoginContainer>

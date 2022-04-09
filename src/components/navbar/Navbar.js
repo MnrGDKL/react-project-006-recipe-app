@@ -12,7 +12,8 @@ const Navbar = () => {
       <Links>
         <Link to="/react-project-006-recipe-app/about">About</Link>
         <a href="https://github.com/mnrgdkl" target="_blank" rel="noreferrer">GitHub</a>
-        <Link to="/react-project-006-recipe-app/">Logout </Link>
+        <Link to="/react-project-006-recipe-app/"
+              onClick={()=> sessionStorage.clear()}>Logout </Link>
       </Links>
     </Main>
   )

@@ -101,6 +101,7 @@ export const Ingredients = styled.div`
 
     @media (max-width: 768px) {
       font-size: 1rem;
+    }
   }
 `;
 

@@ -15,7 +15,7 @@ const Form = ({SelectMeals, setMeal, Data, setQuery, query}) => {
         <FormButton type="submit"
                 onClick={Data}>Search</FormButton>
         <FormSelect onChange={(e)=> setMeal(e.target.value)} >
-          {SelectMeals?.map((meal, index) =>
+          {SelectMeals.map((meal, index) =>
           (<option key={index} value={meal}>{meal}</option>))}
         </FormSelect>
       </form>
@@ -24,3 +24,4 @@ const Form = ({SelectMeals, setMeal, Data, setQuery, query}) => {
 }
 
 export default Form
+
