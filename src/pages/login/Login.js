@@ -20,7 +20,7 @@ const Login = () => {
       navigate("/react-project-006-recipe-app/home");
       sessionStorage.setItem("user", JSON.stringify({username, password}));
     }else{
-      alert("Username or Password is incorrect");
+      alert("Username: munir /n Password: 1251");
       setUsername("");
       setPassword("");
 
